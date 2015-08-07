@@ -326,6 +326,6 @@ int main()
     if (estado == 19) {
         cout << endl << "¡BOOOM! HAS EXPLOTADO UNA MINA. HAS PERDIDO. FIN DEL JUEGO.";
     } else {
-        cout << endl << "¡ENHORABUENA HAS DESCUBIERTO TODAS LAS MINAS!. HAS GANADO. FIN DEL JUEGO.";
+        cout << endl << "¡ENHORABUENA HAS DESCUBIERTO TODAS LAS MINAS!. HAS GANADO. FIN DEL JUEGO. ";
     }
 }

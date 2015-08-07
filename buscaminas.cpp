@@ -176,8 +176,12 @@ string PasarAMayusculas(string minusculas) {
 // para permitir que la palabra se escriba en mayúsculas y minúsculas
 void SolicitaJugada(string &accion, int &fila, int &columna, const vector <vector <int> > &matriz) {
     do {
-        cout << endl << "Dime acción y posición (fila y columna): ";
-        cin >> accion >> fila >> columna;
+        cout << endl << "ACCION: (A)brir o (M)arcar: ";
+        cin >> accion;
+        cout << endl << "FILA: ";
+        cin >> fila;
+        cout << endl << "COLUMNA: ";
+        cin >> columna;
         accion = PasarAMayusculas(accion);
     } while ((accion != "A" && accion != "M" && accion != "ABRIR" && accion != "MARCAR") ||
             (fila < 0 || fila > (int)matriz.size()-1) || (columna < 0 || columna > (int)matriz.at(0).size()-1));
@@ -189,12 +193,17 @@ void SolicitaJugada(string &accion, int &fila, int &columna, const vector <vecto
 // y las almacena en variables pasadas por referencia
 void DatosIniciales(int &filas, int &columnas, int &minas) {
     do {
-        cout << "Dime número de filas y columnas para el tablero (mínimo 4 filas y 4 columnas): ";
-        cin >> filas >> columnas;
-    } while (filas < 4 || columnas < 4);
+        cout << "NUMERO DE FILAS (MINIMO 4): ";
+        cin >> filas;
+    } while (filas < 4);
 
     do {
-        cout << "Dime número de minas (mínimo 5, máximo 50% de casillas con mina, en este caso (" << (filas*columnas)/2 << ")): ";
+        cout << "NUMERO DE COLUMNAS (MINIMO 4): ";
+        cin >> columnas;
+    } while (columnas < 4);
+
+    do {
+        cout << "NUMERO DE MINAS (MINIMO 5, MAXIMO 50% DE CASILLAS CON MINA, EN ESTE CASO (" << (filas*columnas)/2 << ")): ";
         cin >> minas;
     } while (minas < 5 || minas > (filas*columnas)/2);
 }

@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1357719488 source:/home/antonio/Escritorio/1F/FP/Buscaminas/Buscaminas/main.cpp
+	<iostream>
+	<vector>
+	<cstdlib>
+	<ctime>
+	<string>
+
+1358014130 source:i:\1f\fp\buscaminas\buscaminas\main.cpp
+	<iostream>
+	<vector>
+	<cstdlib>
+	<ctime>
+	<string>
+
+1438962302 source:h:\dropbox\github\fp\buscaminas\main.cpp
+	<iostream>
+	<vector>
+	<cstdlib>
+	<ctime>
+	<string>
+
